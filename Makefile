@@ -16,9 +16,5 @@ build:
 run:
 	./program
 
-.PHONY: prompt
-prompt:
-	./prompt.sh
-
 .PHONY: all
-all: prompt build run
+all: build run
