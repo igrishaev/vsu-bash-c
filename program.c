@@ -13,7 +13,7 @@
 #endif
 
 
-static char *myStrDup (char *str) {
+static char *str_duplicate (char *str) {
     char *other = malloc(strlen(str) + 1);
     if (other != NULL)
         strcpy(other, str);
@@ -28,7 +28,7 @@ void call(char cmd[]) {
 
     char *str = strtok(cmd, " ");
     while (str != NULL) {
-        argv[argc++] = myStrDup(str);
+        argv[argc++] = str_duplicate(str);
         str = strtok(NULL, " ");
     }
     argv[argc] = NULL;
