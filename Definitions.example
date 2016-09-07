@@ -1,0 +1,2 @@
+CMD1 = ls -l
+CMD2 = grep file
