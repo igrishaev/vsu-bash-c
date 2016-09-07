@@ -43,15 +43,12 @@ Select a command pair:
 1) who | wc -l
 2) ls -l | head -n 4
 *) Quit
-2
+1
 Commands saved.
 Ivans-MBP% make
-cc program.c -o program -D CMD1='"ls -l"' -D CMD2='"head -n 4"'
+cc program.c -o program -D CMD1='"who"' -D CMD2='"wc -l"'
 ./program
-total 72
--rw-r--r--  1 ivan  staff    30 Sep  7 11:35 Definitions
--rw-r--r--  1 ivan  staff    30 Sep  7 10:47 Definitions.example
--rw-r--r--  1 ivan  staff   239 Sep  7 11:08 Makefile
+       2
 ```
 
 Or user preferred ones:
